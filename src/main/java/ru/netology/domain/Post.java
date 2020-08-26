@@ -12,77 +12,7 @@ public class Post {
     private int friendsOnlyPost;
     private CommentsInfo CommentsInfo;
     private LikesInfo LikesInfo;
-    private RepostsInfo RepostsInfo;
     private ViewsInfo ViewsInfo;
-    private int countLikes;
-    private int countComment;
-
-    public int getSignerID() {
-        return signerID;
-    }
-
-    public void setSignerID(int signerID) {
-        this.signerID = signerID;
-    }
-
-    public int getCanPin() {
-        return canPin;
-    }
-
-    public void setCanPin(int canPin) {
-        this.canPin = canPin;
-    }
-
-    public int getCanDelete() {
-        return canDelete;
-    }
-
-    public void setCanDelete(int canDelete) {
-        this.canDelete = canDelete;
-    }
-
-    public int getCanEdit() {
-        return canEdit;
-    }
-
-    public void setCanEdit(int canEdit) {
-        this.canEdit = canEdit;
-    }
-
-    public int getIsPinned() {
-        return isPinned;
-    }
-
-    public void setIsPinned(int isPinned) {
-        this.isPinned = isPinned;
-    }
-
-    public int getMarkedAsAds() {
-        return markedAsAds;
-    }
-
-    public void setMarkedAsAds(int markedAsAds) {
-        this.markedAsAds = markedAsAds;
-    }
-
-    public boolean isFavorite() {
-        return isFavorite;
-    }
-
-    public void setFavorite(boolean favorite) {
-        isFavorite = favorite;
-    }
-
-    public int getPostponedId() {
-        return postponedId;
-    }
-
-    public void setPostponedId(int postponedId) {
-        this.postponedId = postponedId;
-    }
-
-    private int countRepost;
-    private int countView;
     private int signerID;
     private int canPin;
     private int canDelete;
@@ -164,67 +94,91 @@ public class Post {
         this.friendsOnlyPost = friendsOnlyPost;
     }
 
-    public CommentsInfo getCommentsInfo() {
+    public ru.netology.domain.CommentsInfo getCommentsInfo() {
         return CommentsInfo;
     }
 
-    public void setCommentsInfo(CommentsInfo commentsInfo) {
+    public void setCommentsInfo(ru.netology.domain.CommentsInfo commentsInfo) {
         CommentsInfo = commentsInfo;
     }
 
-    public LikesInfo getLikesInfo() {
+    public ru.netology.domain.LikesInfo getLikesInfo() {
         return LikesInfo;
     }
 
-    public void setLikesInfo(LikesInfo likesInfo) {
+    public void setLikesInfo(ru.netology.domain.LikesInfo likesInfo) {
         LikesInfo = likesInfo;
     }
 
-    public RepostsInfo getRepostsInfo() {
-        return RepostsInfo;
-    }
-
-    public void setRepostsInfo(RepostsInfo repostsInfo) {
-        RepostsInfo = repostsInfo;
-    }
-
-    public ViewsInfo getViewsInfo() {
+    public ru.netology.domain.ViewsInfo getViewsInfo() {
         return ViewsInfo;
     }
 
-    public void setViewsInfo(ViewsInfo viewsInfo) {
+    public void setViewsInfo(ru.netology.domain.ViewsInfo viewsInfo) {
         ViewsInfo = viewsInfo;
     }
 
-    public int getCountLikes() {
-        return countLikes;
+    public int getSignerID() {
+        return signerID;
     }
 
-    public void setCountLikes(int countLikes) {
-        this.countLikes = countLikes;
+    public void setSignerID(int signerID) {
+        this.signerID = signerID;
     }
 
-    public int getCountComment() {
-        return countComment;
+    public int getCanPin() {
+        return canPin;
     }
 
-    public void setCountComment(int countComment) {
-        this.countComment = countComment;
+    public void setCanPin(int canPin) {
+        this.canPin = canPin;
     }
 
-    public int getCountRepost() {
-        return countRepost;
+    public int getCanDelete() {
+        return canDelete;
     }
 
-    public void setCountRepost(int countRepost) {
-        this.countRepost = countRepost;
+    public void setCanDelete(int canDelete) {
+        this.canDelete = canDelete;
     }
 
-    public int getCountView() {
-        return countView;
+    public int getCanEdit() {
+        return canEdit;
     }
 
-    public void setCountView(int countView) {
-        this.countView = countView;
+    public void setCanEdit(int canEdit) {
+        this.canEdit = canEdit;
+    }
+
+    public int getIsPinned() {
+        return isPinned;
+    }
+
+    public void setIsPinned(int isPinned) {
+        this.isPinned = isPinned;
+    }
+
+    public int getMarkedAsAds() {
+        return markedAsAds;
+    }
+
+    public void setMarkedAsAds(int markedAsAds) {
+        this.markedAsAds = markedAsAds;
+    }
+
+    public boolean isFavorite() {
+        return isFavorite;
+    }
+
+    public void setFavorite(boolean favorite) {
+        isFavorite = favorite;
+    }
+
+    public int getPostponedId() {
+        return postponedId;
+    }
+
+    public void setPostponedId(int postponedId) {
+        this.postponedId = postponedId;
     }
 }
